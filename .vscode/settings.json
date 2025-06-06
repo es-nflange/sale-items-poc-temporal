@@ -1,0 +1,10 @@
+{
+    "emeraldwalk.runonsave": {
+        "commands": [
+            {
+                "match": "\\.py$",
+                "cmd": ".venv/bin/python -m black ${file}"
+            }
+        ]
+    },
+}

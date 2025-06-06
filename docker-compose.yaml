@@ -1,0 +1,8 @@
+services:
+  temporal:
+    image: temporalio/server:latest
+    ports:
+      - '7233:7233'
+      - '8233:8233'
+    entrypoint: []
+    command: temporal server start-dev --ip 0.0.0.0 --ui-ip 0.0.0.0 --dynamic-config-value frontend.workerVersioningWorkflowAPIs=true --dynamic-config-value frontend.workerVersioningRuleAPIs=true --dynamic-config-value worker.buildIdScavengerEnabled=true --dynamic-config-value frontend.enableUpdateWorkflowExecution=true

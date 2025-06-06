@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "sale-items-poc"
+version = "0.1.0"
+description = ""
+authors = ["Niall Flanagan <niall.flanagan@equipmentshare.com>"]
+packages = [
+    {include = "message_passing"},
+]
+
+[tool.poetry.dependencies]
+python = "~=3.12"
+temporalio =  ">=1.11.1"
+
+[tool.poetry.group.dev.dependencies]
+black = "^25.1.0"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
